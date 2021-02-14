@@ -11,6 +11,7 @@
     <h1>Hola Mundo</h1>
     <?php
     require_once "app/core/App.php";
+
     $recurso = $_REQUEST['url'];
     var_dump($recurso);
     echo 'Buscamos en ' . $recurso;
