@@ -1,12 +1,15 @@
 <?php
-class MainController
+class MainController extends Controller
 {
     public function __construct()
     {
-        echo "<p>Controlador Principal</p>";
+        parent::__construct();
+        $this->view->render('mainView');
+        echo "<p>Main Controller</p>";
     }
 
-    public function saludo(){
+    public function saludo()
+    {
         echo "<p>Saludo al curso</p>";
     }
 }
