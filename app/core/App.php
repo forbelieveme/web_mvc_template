@@ -5,8 +5,6 @@ class App
 {
     public function __construct()
     {
-        echo "<p>Nueva App</p>";
-
         $url = isset($_REQUEST['url']) ? $_REQUEST['url'] : null; // Se obtiene la ruta restante del url
         $url = rtrim($url, '/'); // Elimina los caractertes '/' del final de la url
         $url = explode('/', $url); // Parte el string en substrings donde encuentre '/'
